@@ -13,6 +13,28 @@ namespace ConsoleTestGit
             Console.WriteLine("hello world");
             Console.WriteLine("jengi e noob");
             Console.WriteLine("jengi e very noob");
+
+            int[] arr = Enumerable.Range(0, 8).ToArray();
+            for (int i = 0; i < arr.Length; i++)
+            {
+                for (int j = 0; j <= i; j++)
+                {
+                    if (i == j)
+                        Console.Write($"{arr[j]}\t");
+                    Console.Write($"{arr[j]}\t");
+                }
+            }
+
+            for (int i = arr.Length; i >= 0; i--)
+            {
+                for (int j = 0; j < i; j++)
+                {
+                    if(i-1==j)
+                        Console.Write($"{arr[j]}\t");
+                    Console.Write($"{arr[j]}\t");
+                }
+                Console.WriteLine();
+            }
         }
     }
 }
