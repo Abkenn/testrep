@@ -12,6 +12,7 @@ namespace ConsoleTestGit
         {
             Console.WriteLine("hello world");
             Console.WriteLine("jengi e noob");
+            Console.WriteLine("jengi e very noob");
         }
     }
 }
