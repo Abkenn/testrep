@@ -18,9 +18,14 @@ namespace ConsoleTestGit
             for (int i = 0; i < arr.Length; i++)
             {
                 for (int j = 0; j <= i; j++)
-                {
                     Console.Write($"{arr[j]}\t");
-                }
+                Console.WriteLine();
+            }
+
+            for (int i = arr.Length; i >= 0; i--)
+            {
+                for (int j = 0; j < i; j++)
+                    Console.Write($"{arr[j]}\t");
                 Console.WriteLine();
             }
 
